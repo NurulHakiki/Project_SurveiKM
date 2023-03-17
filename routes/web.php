@@ -7,6 +7,7 @@ use App\Http\Controllers\SubKategoriController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\SurveiController;
 use App\Http\Controllers\SKM_Controller;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,10 +24,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function() {
-    return view('home');
-})->name("home");
+// Route::get('/home', function() {
+//     return view('home');
+// })->name("home");
 
+Route::get('admin', [LoginController::class, 'login'])->name('login');
+Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+
+Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 Route::get('/kategori', [App\Http\Controllers\kategoriController::class, 'index'])->name('kategori');
 // Route::get('/kategori/tambah-data', [App\Http\Controllers\kategoriController::class, 'create'])->name('kategori/tambah-data');
