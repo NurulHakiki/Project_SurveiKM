@@ -48,17 +48,6 @@ Route::post('/client/tambah-data/proses', [App\Http\Controllers\ClientController
 Route::post('/client/edit-data/proses', [App\Http\Controllers\ClientController::class, 'update'])->name('client/edit-data/proses');
 Route::get('/client/data/hapus/{id}', [App\Http\Controllers\ClientController::class, 'destroy'])->name('client/data/hapus');
 
-Route::get('/survei', [App\Http\Controllers\SurveiController::class, 'index'])->name('survei');
-Route::get('/survei/get-data', [App\Http\Controllers\SurveiController::class, 'show'])->name('survei/get-data');
-Route::post('/survei/tambah-data/proses', [App\Http\Controllers\SurveiController::class, 'store'])->name('survei/tambah-data/proses');
-Route::post('/survei/edit-data/proses', [App\Http\Controllers\SurveiController::class, 'update'])->name('survei/edit-data/proses');
-Route::get('/survei/data/hapus/{id}', [App\Http\Controllers\SurveiController::class, 'destroy'])->name('survei/data/hapus');
-
-Route::get('/skm', [App\Http\Controllers\SKM_Controller::class, 'index'])->name('skm');
-Route::get('/skm/get-data', [App\Http\Controllers\SKM_Controller::class, 'show'])->name('skm/get-data');
-Route::post('/skm/tambah-data/proses', [App\Http\Controllers\SKM_Controller::class, 'store'])->name('skm/tambah-data/proses');
-Route::post('/skm/edit-data/proses', [App\Http\Controllers\SKM_Controller::class, 'update'])->name('skm/edit-data/proses');
-Route::get('/skm/data/hapus/{id}', [App\Http\Controllers\SKM_Controller::class, 'destroy'])->name('skm/data/hapus');
 
 Route::get('/respon', function() {
     return view('respon');
