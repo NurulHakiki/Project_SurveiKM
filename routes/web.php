@@ -25,3 +25,8 @@ Route::get('/kuesioner/lpk', [KuesionerController::class, 'lpk']);
 Route::get('/kuesioner/pencatatan-perusahaan', [KuesionerController::class, 'pencatatanPerusahaan']);
 Route::get('/kuesioner/perselisihan-hubungan-industrial', [KuesionerController::class, 'perselisihanHubunganIndustrial']);
 Route::post('/kuesioner/add-kuesioner', [KuesionerController::class, 'store']);
+
+
+Route::get('/contoh', function () {
+    return view('contoh');
+});
