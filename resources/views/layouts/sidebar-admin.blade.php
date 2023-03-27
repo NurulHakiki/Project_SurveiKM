@@ -37,7 +37,7 @@
                         <span class="item-name">Layanan</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{ url('/admin/induk_pertanyaan') }}">
                         <i class="icon">
                             <svg width="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                
@@ -47,7 +47,7 @@
                         </i>
                         <span class="item-name">Induk Pertanyaan</span>
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{ url('/admin/pertanyaan') }}">
                         <i class="icon">
@@ -88,7 +88,7 @@
 
                 {{-- 2 = Admin Only  --}}
                 @if(session()->get('role') == 2)
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{ url('/admin/kuesioner-admin') }}">
                         <i class="icon">
                             <svg width="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                                
@@ -98,7 +98,7 @@
                         </i>
                         <span class="item-name">Laporan Hasil Survey</span>
                     </a>
-                </li>
+                </li> -->
                 @endif
 
             </ul>

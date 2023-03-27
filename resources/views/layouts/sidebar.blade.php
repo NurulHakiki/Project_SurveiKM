@@ -7,12 +7,12 @@
             </div>
         </a>
         <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
-            <i class="icon">
+            <!-- <i class="icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-            </i>
+            </i> -->
         </div>
     </div>
     <div class="sidebar-body pt-0 data-scrollbar">
@@ -30,7 +30,7 @@
                         <span class="item-name">Home</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{ url('/kuesioner/pendidikan') }}">
                         <i class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
@@ -89,7 +89,7 @@
                         </i>
                         <span class="item-name">REGULATIF</span>
                     </a>
-                </li>
+                </li> -->
 
             </ul>
             <!-- Sidebar Menu End -->        
