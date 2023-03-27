@@ -18,15 +18,15 @@ Route::get('/data-grafik-bar', [DashboardController::class, 'dataGrafikBar']);
 Route::get('/dashboard-filter-layanan/{id_layanan}', [DashboardController::class, 'filterByLayanan']);
 
 
-Route::get('/kuesioner/ak1', [KuesionerController::class, 'ak1']);
-Route::get('/kuesioner/rekom-passport', [KuesionerController::class, 'rekomPassport']);
-Route::get('/kuesioner/pelatihan', [KuesionerController::class, 'pelatihan']);
-Route::get('/kuesioner/lpk', [KuesionerController::class, 'lpk']);
-Route::get('/kuesioner/pencatatan-perusahaan', [KuesionerController::class, 'pencatatanPerusahaan']);
-Route::get('/kuesioner/perselisihan-hubungan-industrial', [KuesionerController::class, 'perselisihanHubunganIndustrial']);
+Route::get('/kuesioner/pendidikan', [KuesionerController::class, 'pendidikan']);
+Route::get('/kuesioner/kesehatan', [KuesionerController::class, 'kesehatan']);
+Route::get('/kuesioner/administratif', [KuesionerController::class, 'administratif']);
+Route::get('/kuesioner/publik', [KuesionerController::class, 'publik']);
+Route::get('/kuesioner/sarana', [KuesionerController::class, 'sarana']);
+Route::get('/kuesioner/regulatif', [KuesionerController::class, 'regulatif']);
 Route::post('/kuesioner/add-kuesioner', [KuesionerController::class, 'store']);
 
 
-Route::get('/contoh', function () {
-    return view('contoh');
-});
+// Route::get('/contoh', function () {
+//     return view('contoh');
+// });

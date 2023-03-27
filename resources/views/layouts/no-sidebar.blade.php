@@ -53,7 +53,7 @@
 		<div class="position-relative iq-banner">
 			@include('layouts.navbar')
 
-			<div class="iq-navbar-header" style="height: 215px;">
+			<!-- <div class="iq-navbar-header" style="height: 215px;">
 				<div class="container-fluid iq-container">
 					<div class="row">
 						<div class="col-md-12">
@@ -68,7 +68,7 @@
 				<div class="iq-header-img">
 					<img src="{{ asset('assets/images/dashboard/top-header.png') }}" alt="header" class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX">
 				</div>
-		  	</div>          
+		  	</div>           -->
 	  	</div>
 
 	  	<div class="conatiner-fluid content-inner mt-n5 py-0">

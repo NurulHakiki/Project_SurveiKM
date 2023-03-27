@@ -6,7 +6,7 @@
       <title>SKM</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" type="image/png" href="{{ asset('logobaru.png') }}" />
+      <link rel="shortcut icon" type="image/png" href="{{ asset('logo_siak.png') }}" />
       
       <!-- Library / Plugin Css Build -->
       <link rel="stylesheet" href="{{ asset('assets/css/core/libs.min.css') }}" />

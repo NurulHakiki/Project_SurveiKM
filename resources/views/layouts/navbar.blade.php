@@ -33,11 +33,11 @@
           <a href="{{ url('admin/dashboard') }}" class="me-4 text-reset">                           
             
           </a>
-          <a href="{{ url('auth/logout') }}" class="btn btn-primary">                           
+          <a href="{{ url('auth/logout') }}" class="btn btn-success">                           
             Logout
           </a>
           @else
-          <a href="{{ url('login') }}" class="btn btn-primary">                           
+          <a href="{{ url('login') }}" class="btn btn-success">                           
             Login
           </a>
           @endif

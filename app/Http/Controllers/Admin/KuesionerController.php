@@ -15,6 +15,7 @@ use App\Exports\ExportExcelFromView;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Gate;
 use App\Contracts\PertanyaanContract;
+use App\Contracts\IndukPertanyaanContract;
 
 class KuesionerController extends Controller
 {

@@ -18,68 +18,68 @@ class KuesionerController extends Controller
         //
     }
 
-    public function ak1()
+    public function pendidikan()
     {
         $questions = $this->pertanyaanService->getAllPertanyaan();
         
         return view('kuesioner.index', [
             'questions' => $questions,
-            'namalayanan' => 'AK1',
+            'namalayanan' => 'Pendidikan',
             'id_layanan' => 1
         ]);
     }
 
-    public function rekomPassport()
+    public function kesehatan()
     {
         $questions = $this->pertanyaanService->getAllPertanyaan();
         
         return view('kuesioner.index', [
             'questions' => $questions,
-            'namalayanan' => 'Rekom Passport',
+            'namalayanan' => 'Pendidikan',
             'id_layanan' => 2
         ]);
     }
 
-    public function pelatihan()
+    public function administratif()
     {
         $questions = $this->pertanyaanService->getAllPertanyaan();
         
         return view('kuesioner.index', [
             'questions' => $questions,
-            'namalayanan' => 'Pelatihan',
+            'namalayanan' => 'Pendidikan',
             'id_layanan' => 3
         ]);
     }
 
-    public function lpk()
+    public function publik()
     {
         $questions = $this->pertanyaanService->getAllPertanyaan();
         
         return view('kuesioner.index', [
             'questions' => $questions,
-            'namalayanan' => 'LPK',
+            'namalayanan' => 'Pendidikan',
             'id_layanan' => 4
         ]);
     }
 
-    public function pencatatanPerusahaan()
+    public function sarana()
     {
         $questions = $this->pertanyaanService->getAllPertanyaan();
         
         return view('kuesioner.index', [
             'questions' => $questions,
-            'namalayanan' => 'Pencatatan Perusahaan',
+            'namalayanan' => 'Pendidikan',
             'id_layanan' => 5
         ]);
     }
 
-    public function perselisihanHubunganIndustrial()
+    public function regulatif()
     {
         $questions = $this->pertanyaanService->getAllPertanyaan();
         
         return view('kuesioner.index', [
             'questions' => $questions,
-            'namalayanan' => 'Perselisihan Hubungan Industrial',
+            'namalayanan' => 'Pendidikan',
             'id_layanan' => 6
         ]);
     }

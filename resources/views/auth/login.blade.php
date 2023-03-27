@@ -43,13 +43,8 @@
 
         <div class="left">
             <div class="login">
-                
-
                 <h2 class="mb-5 fw-semibold text-center">Login To SKM Administrator</h2>
-
-                <div id="error-msg">
-                    
-                </div>
+                <div id="error-msg"></div>
 
                 <form method="post" id="form-login" spellcheck="false">
                     <div class="mb-4">
@@ -77,9 +72,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="right position-relative">
-            <img src="{{ asset('assets/images/login.jpg') }}" alt="Login" style="max-width: 700px; position: absolute; top: 50%; right: 50%; transform: translate(50%,-50%);"
         </div>
     </div>   
 </div>
