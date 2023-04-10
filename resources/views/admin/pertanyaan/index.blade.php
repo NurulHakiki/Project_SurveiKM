@@ -25,7 +25,7 @@
                     <tr>
                         <th class="text-nowrap text-center" style="width: 50px;">No</th>
                         <th class="text-nowrap text-center" style="width: 100px;">Aksi</th>
-                        <th class="text-nowrap text-center">Unsur</th>
+                        <th class="text-nowrap text-center">Kategori</th>
                         <th class="text-nowrap text-center">No. Urut</th>
                         <th class="text-nowrap text-center">Pertanyaan</th>
                     </tr>

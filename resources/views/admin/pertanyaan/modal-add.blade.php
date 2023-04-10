@@ -10,9 +10,10 @@
                     <div class="mb-3">
                         <label class="col-form-label" style="font-weight: 600;">No. urut <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" name="no_urut" id="no_urut">
+                        
                     </div>
                     <div class="mb-3">
-                        <label class="col-form-label" style="font-weight: 600;">Unsur <span class="text-danger">*</span></label>
+                        <label class="col-form-label" style="font-weight: 600;">Kategori <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" name="unsur" id="unsur">
                     </div>
                     <div class="mb-3">
@@ -40,7 +41,7 @@
 
                     <div class="d-flex justify-content-end">
                         <button type="button" data-bs-dismiss="modal" data-bs-target="#modal-add-pertanyaan" class="btn btn-danger me-3">Batal</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-success">Simpan</button>
                     </div>
                 </form>
             </div>

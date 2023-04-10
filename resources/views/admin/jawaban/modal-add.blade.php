@@ -21,7 +21,7 @@
                     </div>
                     <div class="d-flex justify-content-end">
                         <button type="button" data-bs-dismiss="modal" data-bs-target="#modal-add-jawaban" class="btn btn-danger me-3">Batal</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-success">Simpan</button>
                     </div>
                 </form>
             </div>

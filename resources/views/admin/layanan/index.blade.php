@@ -7,10 +7,10 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h5 class="mb-0">Management Layanan</h5>
+            <h5 class="mb-0">Pengelolaan Layanan</h5>
         </div>
         <div class="card-body">
-            <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#modal-add-layanan">Tambah Layanan</button>
+            <button type="button" class="btn btn-success mb-4" data-bs-toggle="modal" data-bs-target="#modal-add-layanan">Tambah Layanan</button>
 
             <table id="table" class="table table-bordered table-hover" style="width: 100%;">
                 <thead>
@@ -21,9 +21,6 @@
                         <th class="text-nowrap text-center">Deskripsi</th>
                     </tr>
                 </thead>
-                <tbody>
-
-                </tbody>
             </table>
         </div>
     </div>

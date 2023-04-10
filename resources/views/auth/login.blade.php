@@ -34,47 +34,81 @@
     .form-control {
         border: 1px solid #d6d7df;
     }
+    .card{
+        position: relative;
+        background: #dbffd6;
+    }
+
+    .divider:after,
+    .divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+    }
+    .h-custom {
+    height: calc(100% - 73px);
+    }
+    @media (max-width: 450px) {
+    .h-custom {
+    height: 100%;
+    }
+    }
+
 </style>   
 @endsection
 
 @section('content')
-<div>
-    <div id="wrapper-login" class="d-flex">
 
-        <div class="left">
-            <div class="login">
-                <h2 class="mb-5 fw-semibold text-center">Login To SKM Administrator</h2>
-                <div id="error-msg"></div>
+    <div class="card" style="width: 38rem;">
+            <div class="card-body">
+                <div id="wrapper-login" class="">
+                    <div class="center">
+                        <div class="login">
+                            <h2 class="mb-3 fw-semibold text-center">Login To SKM Administrator</h2>
+                            <div id="error-msg"></div>
 
-                <form method="post" id="form-login" spellcheck="false">
-                    <div class="mb-4">
-                        <label for="username" class="fw-semibold mb-1">Username</label>
-                        <input type="text" name="username" id="username" class="form-control px-3 py-2" maxlength="70" tabindex="1" required />
-                    </div>
-                    <div class="mb-5">
-                        <div class="d-flex justify-content-between">
-                            <label for="password" class="fw-semibold mb-1">Password</label>
+                            <form method="post" id="form-login" spellcheck="false">
+                            <div class="mb-5">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="username" class="fw-semibold mb-1">Username</label>
+                                    </div>
+                                    <div class="position-relative">
+                                        <input type="username" name="username" id="username" tabindex="2" class="form-control px-3 py-2 pe-5" maxlength="40" required />
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="password" class="fw-semibold mb-1">Password</label>
+                                    </div>
+                                    <div class="position-relative">
+                                        <input type="password" name="password" id="password" tabindex="2" class="form-control px-3 py-2 pe-5" maxlength="40" required />
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <button type="submit" class="btn btn-success w-100 py-2">Login</button>
+                                </div>
+                                <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="remember_me">
+                                    <label class="form-check-label" for="remember_me">
+                                        Remember Me
+                                    </label>
+                                </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="position-relative">
-                            <input type="password" name="password" id="password" tabindex="2" class="form-control px-3 py-2 pe-5" maxlength="40" required />
-                        </div>
                     </div>
-                    <div class="mb-4">
-                        <button type="submit" class="btn btn-primary w-100 py-2">Login</button>
-                    </div>
-                    <div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="remember_me">
-                            <label class="form-check-label" for="remember_me">
-                                Remember Me
-                            </label>
-                        </div>
-                    </div>
-                </form>
+                </div>   
             </div>
         </div>
-    </div>   
-</div>
+    <div>
+
+
+
+
+
+
 @endsection
 
 @section('script')

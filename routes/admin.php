@@ -39,13 +39,7 @@ Route::group(['prefix' => 'jawaban'], function () {
     Route::delete('/{id}', [JawabanController::class, 'destroy']);
 });
 
-Route::group(['prefix' => 'kuesioner'], function () {
-    Route::get('/', [KuesionerController::class, 'index'])->middleware('superadmin');
-    Route::get('/{id}', [KuesionerController::class, 'show'])->middleware('superadmin');
-    Route::post('/get-list', [KuesionerController::class, 'getList']);
-    Route::put('/{id}', [KuesionerController::class, 'update'])->middleware('superadmin');
-    Route::post('/export-excel', [KuesionerController::class, 'exportExcel']);
-});
+
 
 // Admin only 
 Route::get('kuesioner-admin', [KuesionerController::class, 'adminOnly']);

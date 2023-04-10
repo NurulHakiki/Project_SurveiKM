@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('no_urut');
             $table->string('pertanyaan');
             $table->string('unsur')->nullable();
+            
         });
     }
 

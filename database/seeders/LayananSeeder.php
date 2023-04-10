@@ -16,22 +16,22 @@ class LayananSeeder extends Seeder
     {
         DB::table('tbl_layanan')->insert([
             [
-                'namalayanan' => 'AK1'
+                'namalayanan' => 'Pendidikan'
             ],
             [
-                'namalayanan' => 'Rekom Passport'
+                'namalayanan' => 'Kesehatan'
             ],
             [
-                'namalayanan' => 'Pelatihan'
+                'namalayanan' => 'Administratif'
             ],
             [
-                'namalayanan' => 'LPK'
+                'namalayanan' => 'Publik'
             ],
             [
-                'namalayanan' => 'Pencatatan Perusahaan'
+                'namalayanan' => 'Sarana Prasaran'
             ],
             [
-                'namalayanan' => 'Perselisihan Hubungan Industrial'
+                'namalayanan' => 'Regulatif'
             ],
         ]);
     }

@@ -11,14 +11,6 @@
         </a>
       @endif
 
-      <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
-          <i class="icon">
-           <svg width="20px" height="20px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-          </svg>
-          </i>
-      </div>
-   
 
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -30,12 +22,12 @@
 
         <div class="navbar-nav ms-auto align-items-center navbar-list" style="height: 50px;">
           @if(session()->get('username'))
-          <a href="{{ url('admin/dashboard') }}" class="me-4 text-reset">                           
-            
+          <a href="{{ url('admin/dashboard') }}" class="me-4 text-reset">
           </a>
           <a href="{{ url('auth/logout') }}" class="btn btn-success">                           
             Logout
           </a>
+
           @else
           <a href="{{ url('login') }}" class="btn btn-success">                           
             Login

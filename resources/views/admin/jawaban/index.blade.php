@@ -10,8 +10,7 @@
             <h5 class="mb-0">Pengelolaan Jawaban</h5>
         </div>
         <div class="card-body">
-            <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#modal-add-jawaban">Tambah Jawaban</button>
-
+            <button type="button" class="btn btn-success mb-4" data-bs-toggle="modal" data-bs-target="#modal-add-jawaban">Tambah Jawaban</button>
             <table id="table" class="table table-bordered table-hover" style="width: 100%;">
                 <thead>
                     <tr>

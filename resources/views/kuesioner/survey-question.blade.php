@@ -53,8 +53,18 @@
 
                 <div class="mt-5 mb-4">
                     @foreach($questions as $q => $question)
+                    
+
                         <div class="mb-4">
-                            <div>{{ $question->no_urut }}. {{ $question->pertanyaan }}</div>
+                            <div>
+                                <h4>
+                                    <small class="text-muted">{{ $question->unsur }}</small>
+                                </h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <h6>{{ $question->pertanyaan }}</h6></li>
+                                </ul> 
+                            </div>
                             <div class="mt-2 soal">
                                 @foreach ($question->answers as $a => $answer)
                                     <div class="form-check mb-2">

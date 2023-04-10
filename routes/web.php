@@ -26,7 +26,8 @@ Route::get('/kuesioner/sarana', [KuesionerController::class, 'sarana']);
 Route::get('/kuesioner/regulatif', [KuesionerController::class, 'regulatif']);
 Route::post('/kuesioner/add-kuesioner', [KuesionerController::class, 'store']);
 
+Route::post('/kuesioner/add-kuesioner', [KuesionerController::class, 'store']);
 
-// Route::get('/contoh', function () {
-//     return view('contoh');
-// });
+Route::get('/kosong', function () {
+    return view('kosong');
+});

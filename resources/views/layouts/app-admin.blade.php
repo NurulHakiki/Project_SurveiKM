@@ -48,8 +48,6 @@
         </div>    
     </div>
     <!-- loader END -->
-    
-    @include('layouts.sidebar-admin')
       
     <main class="main-content">
         <div class="position-relative">
@@ -57,21 +55,29 @@
             <!--Nav Start-->
             <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar">
                 <div class="container-fluid navbar-inner">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <span class="mt-2 navbar-toggler-bar bar1"></span>
-                            <span class="navbar-toggler-bar bar2"></span>
-                            <span class="navbar-toggler-bar bar3"></span>
-                        </span>
-                    </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav ms-auto align-items-center navbar-list" style="height: 50px;">
                             @if(session()->get('username'))
-                            <a href="{{ url('auth/logout') }}" class="btn btn-primary">                           
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="{{ url('/admin/dashboard') }}">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Management
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{{ url('/admin/layanan') }}">Layanan</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/admin/pertanyaan') }}">Pertanyaan</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/admin/jawaban') }}">Jawaban</a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                            <a href="{{ url('auth/logout') }}" class="btn btn-success">                           
                                 Logout
                             </a>
                             @else 
-                            <a href="{{ url('login') }}" class="btn btn-primary">                           
+                            <a href="{{ url('login') }}" class="btn btn-success">                           
                                 Login
                             </a>
                             @endif

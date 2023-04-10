@@ -13,7 +13,7 @@
                         <input type="text" class="form-control" name="no_urut_edit" id="no_urut_edit">
                     </div>
                     <div class="mb-3">
-                        <label class="col-form-label" style="font-weight: 600;">Unsur <span class="text-danger">*</span></label>
+                        <label class="col-form-label" style="font-weight: 600;">Kategori <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" name="unsur_edit" id="unsur_edit">
                     </div>
                     <div class="mb-3">
